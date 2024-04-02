@@ -135,7 +135,11 @@ section {
   text-transform: uppercase;
 }
 
+.about{
+  padding-top: 150px;
+}
 .about .row{
+  margin-top: 10px;
 display: flex;
 align-items: center;
 background-color: var(--black);
@@ -161,6 +165,10 @@ gap: 1rem;
 font-weight: 300;
 }
 
+.menu{
+  padding-top: 150px;
+}
+
 .box-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));  
@@ -175,6 +183,7 @@ font-weight: 300;
 }
 
 .menu .box-container .box img {
+  
   height: 10rem;
 }
 
@@ -204,6 +213,10 @@ font-weight: 300;
   color: var(--black) !important;
 }
 
+.review{
+  padding-top: 150px;
+}
+
 .review .box-container .box{
   border: var(--border);
   text-align: center;
@@ -230,6 +243,7 @@ font-weight: 300;
 }
 
 .address{
+  padding-top: 150px;
   border-top: var(--main-color) solid 1px;
   display: flex;
   align-items: center;
