@@ -66,27 +66,30 @@ section {
 }
 
 .icons img {
-  margin: 1rem;
+  margin: 0.3;
   cursor: pointer;
+  border-radius: 50%;
+  padding: 1rem;
+  transition: 1s  all ease;
 }
 
 .icons img:hover {
-  width: 40px;
-  height: 40px;
+  background-color: var(--main-color);
+  transform: scale(1.5, 1.5);
 }
 
 .btn{
     background: var(--main-color);
     color: var(--white);
     padding: 1rem 3rem;
-    font-size:  1.7rem;
+    font-size:  1.5rem;
     cursor: pointer;
     margin-top: 1rem;
     display: inline-block;
     border-radius: 10px;
 }
 .btn:hover{
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.1rem;
 }
 
 .home-container{
@@ -158,7 +161,7 @@ gap: 1rem;
 font-weight: 300;
 }
 
-.menu .box-container{
+.box-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));  
   gap: 1.5rem;
@@ -199,4 +202,61 @@ font-weight: 300;
 
 .menu .box-container .box:hover>*{
   color: var(--black) !important;
+}
+
+.review .box-container .box{
+  border: var(--border);
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.review .box-container .box p{
+  font-size: 1.5rem;
+  color: var(--white);
+  padding: 2rem 0;
+  line-height: 1.8;
+}
+
+.review .box-container .box h3{
+  color: var(--white);
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.review .box-container .box .user{
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+}
+
+.address{
+  border-top: var(--main-color) solid 1px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.footer{
+  text-align: center;
+}
+
+.footer .share{
+  border-top: #d3ad7f solid 1px;
+  padding: 1rem 0;
+}
+
+.footer .share img{
+  border-top: var(--main-color) solid 1px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 1.5rem;
+  transition: 1s  all ease;
+}
+
+.footer .share img:hover{
+  background-color: var(--main-color);
+  transform: scale(1.5, 1.5);
+
 }
